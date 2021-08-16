@@ -1,0 +1,116 @@
+import React from "react";
+import { Jumbotron, Card, Button } from "react-bootstrap";
+
+function Contact() {
+  return (
+    <div className="contact">
+      <div className="container">
+        <Jumbotron className="text-center">
+          <h1>Contact Us</h1>
+          <div className="container-flex">
+            <div className="row">
+              <Card className="col-sm p-3 m-3 fix-card" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Get Support</Card.Title>
+                  <Card.Text>
+                  Something is not working for you? Please check our Help Centre first. If your question isn’t answered there, do not hesitate to contact us.
+                  </Card.Text>
+                  <Button variant="primary">support@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Copyright</Card.Title>
+                  <Card.Text>
+                  We take intellectual property rights seriously and enforce a robust takedown/repeat infringer policy. For more information read our Takedown Guidance Policy. You can submit a takedown notice through our online form or send us an email.
+                  </Card.Text>
+                  <Button variant="primary">copyright@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Report Objectionable Material</Card.Title>
+                  <Card.Text>
+                  We have a zero tolerance for  Child Exploitation Material, Violent Extremism, Bestiality, Zoophilia, Gore, Malware, Hacked/Stolen Data/Passwords, Extortion, Revenge Porn etc. Report links with description to:
+                  </Card.Text>
+                  <Button variant="primary">abuse@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+            </div>
+
+
+            <div className="row">
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Privacy</Card.Title>
+                  <Card.Text>
+                  Enquiries and requests relating to our Privacy & Data Policy should be sent to:
+                  </Card.Text>
+                  <Button variant="primary">privacy@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Report a bug</Card.Title>
+                  <Card.Text>
+                  Our company was made by humans and is therefore not perfect. If you run into a bug, we would appreciate hearing about it so that we can fix it - the more details you can provide, the better.
+                  </Card.Text>
+                  <Button variant="primary">bug@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Security</Card.Title>
+                  <Card.Text>
+                  Please contact us about any security issue that you may have encountered. We have a vulnerability rewards program and pays for responsible disclosure.
+                  </Card.Text>
+                  <Button variant="primary">security@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+            </div>
+
+
+            <div className="row">
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Legal</Card.Title>
+                  <Card.Text>
+                  Our legal department is standing by to respond to your enquiry.
+                  </Card.Text>
+                  <Button variant="primary">Legal@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Media</Card.Title>
+                  <Card.Text>
+                  We welcome members of the media, including bloggers, to contact us with inquiries related to our company.
+                  </Card.Text>
+                  <Button variant="primary">media@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+
+              <Card className="col-sm p-3 m-3" style={{ width: '18rem'}}>
+                <Card.Body>
+                  <Card.Title>Other Intellectual Property Issues</Card.Title>
+                  <Card.Text>
+                  Submit full details of alleged Trademark infringement to:
+                  </Card.Text>
+                  <Button variant="primary">takedown@cloud.storage</Button>
+                </Card.Body>
+              </Card>
+            </div>
+
+          </div>
+        </Jumbotron>
+      </div>
+    </div>
+  );
+}
+
+export default Contact;

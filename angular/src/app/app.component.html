@@ -1,0 +1,79 @@
+<!-- 
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+  <div class="navbar">
+    <a class="nav-item nav-link" routerLink="/">Home</a>
+    <a class="nav-item nav-link" routerLink="/about">About</a>
+    <a class="nav-item nav-link" routerLink="/contact">Contact</a>
+    <a class="nav-item nav-link" routerLink="/products">Products</a>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="navigation">
+  <nav class="navbar fixed-top navbar-expand navbar-dark ">
+    <div class="container">
+
+      <a class="navbar-brand" routerLink="/">
+        <img class="logo" src="./assets/images/icon.png" alt="logo">Cloud Storage
+      </a>
+
+      <div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item  {{ this.location.path() === '' ? 'active' : ''}}">
+            <a class="nav-link"  routerLink="/">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item  {{ this.location.path() === '/products' ? 'active' : ''}}">
+            <a class="nav-link" routerLink="/products">
+              Products
+            </a>
+          </li>
+
+          <li class="nav-item  {{ this.location.path() === '/about' ? 'active' : ''}}">
+            <a class="nav-link" routerLink="/about">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item  {{ this.location.path() === '/contact' ? 'active' : ''}}">
+            <a class="nav-link" routerLink="/contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+<div class="footer">
+  <footer class="py-5">
+    <div class="container">
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Cloud Storage 2021
+      </p>
+    </div>
+  </footer>
+</div>
